@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDC - A Property Development</title>
+    <meta
+      name="description"
+      content="Modern Development Real Estate built with CDC Property Development"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://cdcdevelopment.co.uk/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Property Development" />
+    <meta
+      property="og:description"
+      content="Modern Development Real Estate built with CDC Property Development"
+    />
+    <meta property="og:image" content="/og-cover.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="cdcdevelopment.co.uk" />
+    <meta property="twitter:url" content="https://cdcdevelopment.co.uk/" />
+    <meta name="twitter:title" content="CDC Property Development" />
+    <meta
+      name="twitter:description"
+      content="Modern Development Real Estate built with CDC Property Development"
+    />
+    <meta name="twitter:image" content="/og-cover.png" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>CDC Property Development</title>
+  </head>
+  <body onload="getLocation()">
+    <!-- ===== Social Media Links Start ===== -->
+    <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
+      <div class="w-full flex justify-between h-14 items-center">
+        <div class="h-full flex items-center gap-x-4 text-gray-200">
+          <a href="tel:020 8004 3327" class="flex gap-1 text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M14.414 7l3.293-3.293a1 1 0 00-1.414-1.414L13 5.586V4a1 1 0 10-2 0v4.003a.996.996 0 00.617.921A.997.997 0 0012 9h4a1 1 0 100-2h-1.586z"
+              />
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+              />
+            </svg>
+            <span class="hidden sm:flex">020 8004 3327</span>
+          </a>
+          <a
+            href="mailto:info@cdc.construction"
+            class="flex gap-1 items-center"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.106 6.447A2 2 0 001 8.237V16a2 2 0 002 2h14a2 2 0 002-2V8.236a2 2 0 00-1.106-1.789l-7-3.5a2 2 0 00-1.788 0l-7 3.5zm1.48 4.007a.75.75 0 00-.671 1.342l5.855 2.928a2.75 2.75 0 002.46 0l5.852-2.926a.75.75 0 10-.67-1.342l-5.853 2.926a1.25 1.25 0 01-1.118 0l-5.856-2.928z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <span class="hidden sm:flex">info@cdc.construction</span>
+          </a>
+        </div>
+        <div
+          class="flex items-center gap-x-2.5 -mx-2 text-white children:p-2 children:border children:border-x-gray-200 children:bg-gray-200 children:rounded-md"
+        >
+          <a
+            href="#facebook"
+            class="transition ease-linear hover:text-[#CBFB45]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="#twitter"
+            class="transition ease-linear hover:text-[#CBFB45]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-twitter"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="#linkedin"
+            class="transition ease-linear hover:text-[#CBFB45]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="#instagram"
+            class="transition ease-linear hover:text-[#CBFB45]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ===== Social Media Links End ===== -->
+    <!-- ===== Start Navbar ===== -->
+    <header
+      class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full"
+    >
+      <nav
+        class="relative max-w-7xl border border-gray-200 w-full bg-white rounded-[28px] py-3 ps-5 pe-2 md:flex md:items-center md:justify-between md:py-0 mx-2 lg:mx-auto"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="/"
+            class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+          >
+            <img
+              src="/images/DevelopmentLogoN.svg"
+              alt="CDC Property Development Logo"
+              class="h-10 sm:h-12"
+            />
+          </a>
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+              data-hs-collapse="#navbar-collapse-with-animation"
+              aria-controls="navbar-collapse-with-animation"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                class="flex-shrink-0 size-4 open block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" x2="21" y1="6" y2="6" />
+                <line x1="3" x2="21" y1="12" y2="12" />
+                <line x1="3" x2="21" y1="18" y2="18" />
+              </svg>
+              <svg
+                class="close hidden flex-shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Collapse -->
+        <div
+          id="navbar-collapse"
+          class="menu overflow-hidden hidden transition-all duration-300 basis-full grow md:block"
+        >
+          <div
+            class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7"
+          >
+            <a
+              class="text-base text-[#141414] hover:text-[#262626] md:py-4 focus:outline-none focus:text-neutral-300"
+              href="/"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              class="text-base text-[#141414] hover:text-[#262626] md:py-4 focus:outline-none focus:text-neutral-300"
+              href="about.html"
+              aria-current="page"
+              >About</a
+            >
+            <a
+              class="text-base text-[#141414] hover:text-[#262626] md:py-4 focus:outline-none focus:text-neutral-300"
+              href="whyus.html"
+              aria-current="page"
+              >Why Us</a
+            >
+            <a
+              class="text-base text-[#141414] hover:text-[#262626] md:py-4 focus:outline-none focus:text-neutral-300"
+              href="withus.html"
+              aria-current="page"
+              >Work With us</a
+            >
+            <a
+              class="text-base text-[#141414] hover:text-[#262626] md:py-4 focus:outline-none focus:text-neutral-300"
+              href="work.html"
+              aria-current="page"
+              >Our Work</a
+            >
+            <a
+              class="text-base text-[#141414] hover:text-[#262626] md:py-4 focus:outline-none focus:text-neutral-300"
+              href="team.html"
+              aria-current="page"
+              >Team</a
+            >
+            <div>
+              <a
+                class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#703bf7] font-medium text-base text-[#FCFCFD] hover:text-[#F7F7F8] rounded-full focus:outline-none"
+                href="contact.html"
+              >
+                Contact us
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </header>
+    <!-- ===== End Navbar ===== -->
+
+    <!-- ===== Start Hero ===== -->
+    <section>
+      <div
+        class="max-w-7xl flex xl:flex-row flex-col mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24"
+      >
+        <div>
+          <h1 class="title font-semibold text-[#FCFCFD] text-5xl max-w-8xl">
+            <span class="text-[#CBFB45]">CDC Property Development</span>
+            Transforming ideas into reality
+          </h1>
+          <div class="max-w-2xl">
+            <p class="mt-5 text-[#F7F7F8] text-lg">
+              CDC Property Developments Ltd is a property development and
+              investment management company that specialises in the commercial
+              and residential sectors of the Great London and Essex markets. CDC
+              Property Developments Ltd benefits from a vast network and
+              extensive resources as a subsidiary of the CDC group, a collection
+              of investment and operating companies with diverse interests in
+              real estate, private equity, and financial services across the UK.
+            </p>
+          </div>
+          <a href="casestudy.html">
+            <div
+              class="group py-5 px-8 bg-[#141414] max-w-[12rem] rounded-[100px] relative cursor-pointer overflow-hidden transition-all mt-3"
+            >
+              <p
+                class="transition-[top] duration-300 flex justify-center items-center top-0 relative m-0 mt-1 uppercase text-[#FCFCFD] group-hover:top-[-40px]"
+              >
+                Case Studies
+              </p>
+              <div
+                class="absolute top-[110%] group-hover:top-[0%] left-0 w-full h-full flex items-center justify-center transition-all duration-300"
+              >
+                <p class="text-black font-semibold absolute m-0 mt-2 uppercase">
+                  Case Studies
+                </p>
+                <div
+                  class="bg-[#c9ff18] w-3/5 h-full rounded-[50%] group-hover:w-full group-hover:rounded-[100px] transition-all duration-300"
+                ></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-9/12">
+          <svg viewBox="0 0 655 680" fill="none" class="h-full">
+            <g clip-path="url(#:S1:-clip)" class="group">
+              <g
+                class="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105"
+              >
+                <foreignObject width="700" height="680">
+                  <!-- <video src="" autoplay loop muted></video> -->
+                  <image
+                    src="https://cdn.dribbble.com/userupload/11668912/file/original-93adcec6f2c92b63e4499f355c397bf7.jpg?resize=960x1200"
+                    alt="CDC Property Developments Ltd is a property development and
+                    investment management company that specialises in the commercial
+                    and residential sectors"
+                    loading="lazy"
+                    class="w-full bg-neutral-100 object-cover"
+                  />
+                </foreignObject>
+              </g>
+              <use
+                href="#:S1:-shape"
+                stroke-width="2"
+                class="stroke-neutral-950/10"
+              ></use>
+            </g>
+            <defs>
+              <clipPath id=":S1:-clip">
+                <path
+                  id=":S1:-shape"
+                  d="M537.827 9.245A11.5 11.5 0 0 1 549.104 0h63.366c7.257 0 12.7 6.64 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 586.87 151h-28.275a15.999 15.999 0 0 0-15.689 12.862l-59.4 297c-1.98 9.901 5.592 19.138 15.689 19.138h17.275l.127.001c.85.009 1.701.074 2.549.009 11.329-.874 21.411-7.529 24.88-25.981.002-.012.016-.016.023-.007.008.009.022.005.024-.006l24.754-123.771A11.5 11.5 0 0 1 580.104 321h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 617.87 472H559c-22.866 0-28.984 7.98-31.989 25.931-.004.026-.037.035-.052.014-.015-.02-.048-.013-.053.012l-24.759 123.798A11.5 11.5 0 0 1 490.87 631h-29.132a14.953 14.953 0 0 0-14.664 12.021c-4.3 21.502-23.18 36.979-45.107 36.979H83.502c-29.028 0-50.8-26.557-45.107-55.021l102.4-512C145.096 91.477 163.975 76 185.902 76h318.465c10.136 0 21.179-5.35 23.167-15.288l10.293-51.467Zm-512 160A11.5 11.5 0 0 1 37.104 160h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 74.87 311H11.504c-7.257 0-12.7-6.639-11.277-13.755l25.6-128Z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  st
+                />
+                <circle r="10" fill="red">
+                  <animateMotion
+                    dur="20s"
+                    repeatCount="indefinite"
+                    path="M537.827 9.245A11.5 11.5 0 0 1 549.104 0h63.366c7.257 0 12.7 6.64 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 586.87 151h-28.275a15.999 15.999 0 0 0-15.689 12.862l-59.4 297c-1.98 9.901 5.592 19.138 15.689 19.138h17.275l.127.001c.85.009 1.701.074 2.549.009 11.329-.874 21.411-7.529 24.88-25.981.002-.012.016-.016.023-.007.008.009.022.005.024-.006l24.754-123.771A11.5 11.5 0 0 1 580.104 321h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 617.87 472H559c-22.866 0-28.984 7.98-31.989 25.931-.004.026-.037.035-.052.014-.015-.02-.048-.013-.053.012l-24.759 123.798A11.5 11.5 0 0 1 490.87 631h-29.132a14.953 14.953 0 0 0-14.664 12.021c-4.3 21.502-23.18 36.979-45.107 36.979H83.502c-29.028 0-50.8-26.557-45.107-55.021l102.4-512C145.096 91.477 163.975 76 185.902 76h318.465c10.136 0 21.179-5.35 23.167-15.288l10.293-51.467Zm-512 160A11.5 11.5 0 0 1 37.104 160h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 74.87 311H11.504c-7.257 0-12.7-6.639-11.277-13.755l25.6-128Z"
+                  />
+                </circle>
+              </clipPath>
+            </defs>
+          </svg>
+
+          <!-- <img src="/test/HomeTest.svg" alt="" /> -->
+        </div>
+      </div>
+    </section>
+    <!-- ===== End Hero ===== -->
+    <!-- ===== START VALUE ===== -->
+    <section class="bg-white">
+      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Grid -->
+        <div
+          class="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between"
+        >
+          <div class="lg:col-span-5 lg:col-start-1">
+            <!-- Title -->
+            <div class="mb-8">
+              <h2 class="mb-2 text-3xl text-gray-800 font-bold lg:text-4xl">
+                Our Values
+              </h2>
+              <p class="text-gray-600">
+                Our story is one of continuous growth and evolution. We started
+                as a small team with big dreams, determined to create a real
+                estate platform that transcended the ordinary.
+              </p>
+            </div>
+            <!-- End Title -->
+
+            <!-- Blockquote -->
+            <blockquote class="relative">
+              <svg
+                class="absolute top-0 start-0 transform -translate-x-6 -translate-y-8 size-16 text-gray-200"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+              <div class="relative z-10">
+                <p class="text-xl italic text-gray-800">
+                  Amazing people to work with. Very fast and professional
+                  partner.
+                </p>
+              </div>
+            </blockquote>
+            <!-- End Blockquote -->
+          </div>
+          <!-- End Col -->
+
+          <div class="mt-10 lg:mt-0 lg:col-span-6 lg:col-end-13">
+            <div class="space-y-6 sm:space-y-8">
+              <!-- List -->
+              <ul
+                class="grid md:grid-cols-2 divide-y-2 divide-x-2 divide-gray-200 overflow-hidden"
+              >
+                <li class="flex flex-col -m-0.5 p-4 sm:p-8">
+                  <!-- Card -->
+                  <div>
+                    <div class="flex items-center gap-x-4 mb-3">
+                      <div
+                        class="inline-flex justify-center items-center size-[55px] rounded-full border-4 border-[#703bf7]/10 bg-[#703bf7]/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="flex-shrink-0 size-6 text-[#703bf7]"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <h3
+                          class="block text-[22px] font-semibold text-[#1A1A1A]"
+                        >
+                          Trust
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="text-[#4D4D4D]">
+                      Trust is the cornerstone of every successful real estate
+                      transaction.
+                    </p>
+                  </div>
+                  <!-- End Card -->
+                </li>
+
+                <li class="flex flex-col -m-0.5 p-4 sm:p-8">
+                  <!-- Card -->
+                  <div>
+                    <div class="flex items-center gap-x-4 mb-3">
+                      <div
+                        class="inline-flex justify-center items-center size-[55px] rounded-full border-4 border-[#703bf7]/10 bg-[#703bf7]/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="flex-shrink-0 size-6 text-[#703bf7]"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <h3
+                          class="block text-[22px] font-semibold text-gray-800"
+                        >
+                          Excellence
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="text-gray-600">
+                      We set the bar high for ourselves. From the properties we
+                      list to the services we provide.
+                    </p>
+                  </div>
+                  <!-- End Card -->
+                </li>
+
+                <li class="flex flex-col -m-0.5 p-4 sm:p-8">
+                  <!-- Card -->
+                  <div>
+                    <div class="flex items-center gap-x-4 mb-3">
+                      <div
+                        class="inline-flex justify-center items-center size-[55px] rounded-full border-4 border-[#703bf7]/10 bg-[#703bf7]/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="flex-shrink-0 size-6 text-[#703bf7]"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <h3
+                          class="block text-[22px] font-semibold text-gray-800"
+                        >
+                          Client-Centric
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="text-gray-600">
+                      Your dreams and needs are at the center of our universe.
+                      We listen, understand.
+                    </p>
+                  </div>
+                  <!-- End Card -->
+                </li>
+
+                <li class="flex flex-col -m-0.5 p-4 sm:p-8">
+                  <!-- Card -->
+                  <div>
+                    <div class="flex items-center gap-x-4 mb-3">
+                      <div
+                        class="inline-flex justify-center items-center size-[55px] rounded-full border-4 border-[#703bf7]/10 bg-[#703bf7]/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="flex-shrink-0 size-6 text-[#703bf7]"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <h3
+                          class="block text-[22px] font-semibold text-gray-800"
+                        >
+                          Our Commitment
+                        </h3>
+                      </div>
+                    </div>
+                    <p class="text-gray-600">
+                      We are dedicated to providing you with the highest level
+                      of service, professionalism, and support.
+                    </p>
+                  </div>
+                  <!-- End Card -->
+                </li>
+              </ul>
+              <!-- End List -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+      </div>
+    </section>
+    <!-- ===== START VALUE ===== -->
+
+    <!-- ===== START STATE SECTION ===== -->
+    <section
+      class="h-full mx-auto px-5 flex flex-col items-start gap-10 xl:gap-14"
+    >
+      <div class="max-w-7xl py-10 mx-auto">
+        <div class="">
+          <h4 class="font-bold text-4xl text-[#FCFCFD]">
+            Our Values in action
+          </h4>
+          <!-- Main Content Start -->
+          <main
+            class="w-full h-full xl:lg:py-0 py-2 flex xl:flex-row flex-col justify-between gap-x-10 mt-8"
+          >
+            <!-- Image Show on Mobile  and Hide on Desktop -->
+            <div class="sm:hidden flex items-center justify-center">
+              <img
+                class="object-cover w-96 aspect-auto"
+                src="/images/about/action.svg"
+                alt="CDC Property Development value of the action for mobile"
+              />
+            </div>
+            <!--  Left Side with Main Content -->
+            <div class="left w-full space-y-6 sm:mt-0 mt-5">
+              <!-- First Content -->
+              <div>
+                <h2 class="text-2xl text-[#F7F7F8] font-semibold lg:text-3xl">
+                  Vision & Ethos
+                </h2>
+                <p class="mt-3 text-[#E4E4E7]">
+                  CDC Property Developments Ltd has successfully amassed a
+                  collection of prestigious development ventures and top-notch
+                  investment assets across key regions in London, Manchester,
+                  Birmingham, Northampton, Leicester, and Leeds that are
+                  anticipated to witness significant growth in the foreseeable
+                  future. Our unwavering mission is to sustain this upward
+                  trajectory, all while upholding an unwavering commitment to
+                  meticulous evaluation and the economic foundations of every
+                  undertaking.
+                </p>
+              </div>
+
+              <!-- Second Content -->
+              <div>
+                <h2 class="text-2xl text-[#F7F7F8] font-semibold lg:text-3xl">
+                  Our Achievements
+                </h2>
+                <p class="mt-3 text-[#E4E4E7]">
+                  CDC Property Development Ltd goes beyond the conventional
+                  scope of the industry, recognizing the significance of
+                  creating spaces that not only yield economic benefits but also
+                  contribute positively to the fabric of the surrounding
+                  community. In doing so, the company aligns its objectives with
+                  the broader goal of societal betterment through thoughtful and
+                  purposeful property development initiatives.
+                </p>
+
+                <div
+                  class="group mt-5 py-3 px-5 bg-[#141414] w-fit rounded-[100px] relative cursor-pointer overflow-hidden transition-all"
+                >
+                  <p
+                    class="transition-[top] duration-300 flex justify-center items-center top-0 relative mt-1.5 uppercase text-[#FCFCFD] group-hover:border-0 group-hover:-top-[30px]"
+                  >
+                    Get Start
+                  </p>
+                  <div
+                    class="absolute top-[110%] group-hover:top-[0%] left-0 w-full h-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <p
+                      class="text-black font-semibold absolute mt-1.5 uppercase"
+                    >
+                      Get Start
+                    </p>
+                    <div
+                      class="bg-[#fff] w-3/5 h-full rounded-[50%] group-hover:w-full group-hover:rounded-[100px] transition-all duration-300"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Image Show on Desktop and Hide  on Mobile -->
+              <div class="sm:flex hidden justify-center items-center">
+                <img
+                  class="object-cover w-96 aspect-auto"
+                  src="/images/about/action.svg"
+                  alt="CDC Property Development value of the action"
+                />
+              </div>
+            </div>
+            <!-- Right Side with Main Content -->
+            <div class="right w-full sm:mt-0 mt-5">
+              <!-- Main  Content Section -->
+              <div>
+                <h2 class="text-2xl text-[#FCFCFD] font-semibold lg:text-3xl">
+                  OUR PARTNERS
+                </h2>
+                <p class="mt-3 text-[#E4E4E7]">
+                  CDC Property Developments Ltd strives to ensure its dedication
+                  to quality, professionalism, and timely completion is evident
+                  in the organisation it collaborates with. We firmly believe
+                  that partnerships play a crucial role in achieving success in
+                  all aspects of development and investment activities. The
+                  objective is to establish partnerships with financiers,
+                  architects, builders, and real estate agents who align with
+                  our aspirations and dedication to constructing outstanding,
+                  environmentally friendly structures.
+                </p>
+              </div>
+              <!-- End of Main Content Section -->
+
+              <!-- Features Section -->
+              <div class="space-y-6 mt-5 text-[#FCFCFD]">
+                <!-- Icon Block -->
+                <div class="flex flex-col">
+                  <!-- Icon -->
+
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Industry Recognition
+                  </h3>
+                  <p class="mt-1 text-[#E4E4E7]">
+                    We weren't always a leading force in real estate. We began
+                    as a small, passionate team fueled by a shared aspiration:
+                    to revolutionize the industry with a platform that offered
+                    something truly unique.
+                  </p>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="flex flex-col">
+                  <!-- Icon -->
+
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Constant Drive to Evolve
+                  </h3>
+                  <p class="mt-1 text-[#E4E4E7]">
+                    Despite our limited resources, our ambitions were boundless.
+                    We envisioned a platform that would not just connect buyers
+                    and sellers, but would also empower them with innovative
+                    tools and exceptional service.
+                  </p>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="flex flex-col">
+                  <!-- Icon -->
+
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Growth and Innovation
+                  </h3>
+                  <p class="mt-1 text-[#E4E4E7]">
+                    As we grew, so did our commitment to innovation. We embraced
+                    new technologies, fostered a culture of learning, and
+                    continuously challenged ourselves to improve the real estate
+                    experience.
+                  </p>
+                </div>
+                <!-- End Icon Block -->
+                <!-- Icon Block -->
+                <div class="flex flex-col">
+                  <!-- Icon -->
+
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Building Something Special
+                  </h3>
+                  <p class="mt-1 text-[#E4E4E7]">
+                    Each success story, each satisfied client, fueled our
+                    dedication. We saw every challenge as an opportunity to
+                    refine our approach and build a platform that truly
+                    transcended the ordinary.
+                  </p>
+                </div>
+                <!-- End Icon Block -->
+                <!-- Icon Block -->
+                <div class="flex flex-col">
+                  <!-- Icon -->
+
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Your Dreams, Our Expertise
+                  </h3>
+                  <p class="mt-1 text-[#E4E4E7]">
+                    We understand the importance of dreams, big and small.
+                    Whether you're a seasoned investor or a first-time
+                    homebuyer, we're here to empower you with the tools and
+                    expertise needed to turn those dreams into reality.
+                  </p>
+                </div>
+                <!-- End Icon Block -->
+              </div>
+              <!-- End Features Section -->
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+    <!-- ===== END STATE SECTION ===== -->
+
+    <!-- ===== START ABOUT SECTION ===== -->
+    <section class="bg-white">
+      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Grid -->
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="lg:w-3/4">
+            <h2 class="text-3xl text-[#141414] font-bold lg:text-4xl">
+              Our Approach to Investment
+            </h2>
+            <p class="mt-3 text-[#4D4D4D]">
+              we leverage our extensive knowledge of the London property market
+              and vast network of contacts to identify buildings and development
+              sites exhibiting one or both
+            </p>
+
+            <div
+              class="mt-5 group flex flex-col xl:items-start md:items-start items-center"
+            >
+              <div class="flex group justify-center md:justify-start">
+                <svg
+                  width="342"
+                  height="231"
+                  viewBox="0 0 342 231"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="xl:size-full md:size-full size-9/12 relative"
+                >
+                  <path
+                    d="M73.3331 3.2C70.7998 4.13333 62.9331 7.73333 55.9998 11.2C44.6665 16.6667 41.4665 17.6 28.6665 19.0667C10.5331 21.2 5.99981 23.4667 2.39981 31.7333C-0.400187 37.8667 -0.400187 38.2667 1.73315 49.3333C3.06648 55.6 3.99981 65.4667 3.86648 71.3333C3.73315 83.7333 5.59981 89.4667 11.8665 95.3333C15.5998 98.8 17.3331 99.3333 25.3331 99.7333C31.0665 100.133 35.1998 101.067 36.1331 102.133C36.9331 103.2 38.1331 104 38.7998 104C40.7998 104 40.1331 101.333 37.3331 97.7333C34.1331 93.6 33.8665 90.2667 36.6665 88C39.9998 85.3333 52.5331 89.0667 53.0665 92.9333C53.5998 96.8 59.3331 102.267 63.9998 103.333C69.7331 104.533 77.1998 100.533 79.4665 95.0667L81.3331 90.6667L86.5331 96C93.3331 103.2 99.4665 103.467 106.266 96.6667C110.133 92.8 110.8 91.2 110.533 86.9333C110.133 82.2667 110.8 81.2 115.333 77.2C118.266 74.6667 121.2 71.8667 121.733 71.0667C123.066 68.9333 126.933 68.8 129.066 70.9333C131.733 73.6 130.933 80.1333 127.333 84.8C123.333 90.1333 123.2 91.2 126.8 89.3333C130.533 87.2 134.666 80.1333 134.666 75.3333C134.666 72.1333 136.133 70.1333 141.333 65.6C161.333 48.4 162 20.8 142.666 10.9333C137.333 8.26666 134.933 7.99999 120.666 8.13333C106 8.39999 104 8.13333 96.3998 4.93333C87.3331 1.06666 80.5331 0.533325 73.3331 3.2ZM81.8665 54.2667C88.9331 53.6 89.0665 53.6 94.7998 59.6C100.666 65.7333 109.066 70.5333 114 70.6667C116.266 70.6667 116 71.3333 112.133 74.6667C108 78.2667 107.333 78.5333 105.333 76.6667C102.533 74.1333 97.0665 73.4667 96.3998 75.6C95.9998 76.5333 96.7998 77.3333 97.9998 77.3333C101.2 77.3333 106.666 83.4667 106.666 87.0667C106.666 88.9333 105.466 91.7333 104.133 93.4667C101.466 96.6667 101.466 96.6667 99.4665 94C97.3331 91.3333 97.3331 91.3333 96.5331 94.2667C94.6665 100.933 86.6665 95.2 86.6665 87.3333C86.6665 83.8667 87.5998 81.6 89.9998 79.3333C92.2665 77.3333 92.9331 75.8667 91.9998 75.3333C89.9998 74.1333 85.9998 77.8667 83.9998 82.8C81.8665 87.7333 81.1998 87.6 78.1331 82.5333C75.1998 77.6 69.9998 74.8 67.7331 77.0667C66.6665 78.1333 66.7998 78.8 68.7998 79.4667C73.7331 81.3333 75.9998 84.2667 75.9998 89.3333C75.9998 92.1333 75.0665 95.0667 73.9998 96C72.6665 97.2 71.9998 97.2 71.9998 96.1333C71.9998 95.3333 71.0665 94.6667 69.9998 94.6667C68.9331 94.6667 67.9998 95.8667 67.9998 97.3333C67.9998 100.933 63.0665 100.8 59.0665 97.0667C53.7331 92.1333 55.5998 82.4 62.2665 79.8667C64.9331 78.9333 65.3331 78.1333 64.2665 77.0667C62.3998 75.2 56.2665 79.2 53.9998 83.6C53.0665 85.3333 51.8665 86 50.2665 85.4667C47.9998 84.6667 47.9998 84.4 50.6665 82C52.2665 80.5333 54.5331 77.6 55.5998 75.3333C58.3998 70 59.8665 69.2 64.7998 70.1333C67.4665 70.6667 69.4665 70.2667 69.9998 69.3333C71.3331 67.2 68.2665 65.3333 63.4665 65.3333C60.5331 65.3333 59.8665 64.8 60.5331 63.2C61.0665 62 61.9998 58.2667 62.7998 54.8C63.5998 51.4667 64.3998 48 64.6665 47.0667C64.9331 46.1333 67.1998 47.4667 69.9998 50.2667C74.5331 54.8 75.0665 54.9333 81.8665 54.2667Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M89.9996 66.801C88.7996 68.6677 89.0663 68.9344 95.7329 70.001C100.266 70.6677 101.333 70.5344 101.333 68.9344C101.333 65.601 91.8663 63.7344 89.9996 66.801Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M119.333 83.468C117.066 93.468 112.933 104.001 108.533 110.268C103.6 117.468 92.6664 125.868 86.2664 127.468C81.5998 128.535 80.2664 130.668 84.1331 130.668C92.5331 130.668 107.333 119.335 114.266 107.868C119.733 98.8013 124 83.468 121.733 81.2013C120.533 80.0013 120 80.5346 119.333 83.468Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M193.733 84.5346C173.6 90.9346 161.467 109.868 161.333 134.935C161.333 142.268 160.933 144.001 159.2 144.001C158.133 144.001 154.933 145.335 152.133 146.935L147.067 149.868L135.867 140.801C124.933 132.001 110 122.668 106.933 122.668C105.733 122.668 105.333 127.335 105.333 138.268V154.001L99.8665 147.601C96.9332 144.135 93.3332 141.335 91.8665 141.335C88.3999 141.335 88.6665 142.001 94.3999 147.868C97.0665 150.535 100.667 154.535 102.4 156.668C107.333 162.668 108.667 159.601 108.667 142.535C108.667 134.535 109.067 128.001 109.6 128.001C111.2 128.001 130 141.068 136.267 146.668L142.667 152.135L132.267 159.868C111.333 175.468 104 188.001 106.133 204.268C106.667 208.401 107.6 210.668 108.8 210.668C110.267 210.668 110.4 208.935 109.867 202.801C109.067 196.135 109.467 193.868 112.267 187.868C116.4 179.068 128.933 166.135 132 167.601C134.933 168.935 143.333 168.801 143.6 167.468C143.867 166.668 142.133 166.135 139.733 166.135C137.467 166.001 135.333 165.335 135.067 164.401C134.8 163.601 140.4 159.335 147.6 154.801L160.667 146.801L162.667 156.401C163.867 161.735 166 168.535 167.6 171.601C170.4 176.935 170.4 177.201 168.133 178.001C165.067 178.935 160.667 183.735 161.733 184.801C162.133 185.201 163.867 184.668 165.6 183.468C170.133 180.268 171.733 180.801 178.933 187.468C188.133 196.001 195.6 199.068 206 198.401C220.667 197.468 231.067 187.735 236.267 169.868C239.067 160.668 239.2 160.401 244.533 158.935C247.6 158.135 252.133 156.135 254.667 154.401C259.6 151.068 259.067 150.935 273.6 154.801C278.133 156.001 278.533 156.535 279.467 162.135C280.533 169.468 283.6 169.468 282.933 162.135L282.4 157.068L286.933 158.001C293.2 159.335 313.333 169.068 314.133 171.335C314.533 172.268 313.867 174.668 312.533 176.668C309.467 181.468 311.6 182.801 315.333 178.401L318.4 174.801L322.667 179.601C328.133 185.868 332 194.935 332.933 203.601C333.6 209.468 334.133 210.668 336.4 210.668C338.8 210.668 338.933 210.135 338.133 203.068C335.733 183.068 320.533 165.068 299.733 157.601C294.933 155.868 293.467 154.801 294.133 153.335C297.067 146.801 299.867 137.601 300 134.535C300 127.068 295.867 117.068 290.267 111.468C283.867 105.068 279.067 103.468 260.533 101.601C249.333 100.535 247.467 99.868 236.133 93.3346C217.467 82.668 206.8 80.5346 193.733 84.5346ZM214 127.735C222 131.735 233.067 134.668 240.4 134.668H247.067L246.267 140.001C245.6 145.468 242.267 152.001 240.133 152.001C239.467 152.001 238.533 150.001 238 147.601C237.067 144.135 236.8 145.335 236 154.801C233.6 185.868 213.2 202.268 190.8 191.201C182.4 186.935 173.2 176.135 169.333 165.601C165.867 156.535 166 152.935 169.733 148.535C173.6 144.001 179.333 143.735 185.067 147.735C189.467 150.935 190.667 151.335 190.667 149.468C190.667 147.468 183.733 141.335 181.2 141.335C176.933 141.335 177.333 139.068 183.067 130.268C186.267 125.468 189.867 119.068 191.333 116.135L193.733 110.668L201.2 117.868C205.467 121.735 211.2 126.268 214 127.735Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M202.4 138.267C198.8 142.267 196.4 148 198.4 148C199.066 148 200.266 146.533 201.066 144.8C201.866 142.933 204 140.533 205.866 139.333C208.8 137.333 209.466 137.333 213.2 139.2C215.333 140.4 217.6 141.867 218 142.667C218.4 143.333 219.333 144 220.133 144C222.4 144 221.333 141.2 217.866 138C212.933 133.467 206.8 133.6 202.4 138.267Z"
+                    fill="black"
+                  />
+                  <path
+                    class="group-hover:animate-pulse"
+                    d="M205.6 160.269C205.867 161.869 207.067 163.469 208.4 163.736C210.267 164.136 210.8 163.603 210.4 161.069C210.133 159.469 208.933 157.869 207.6 157.603C205.733 157.203 205.2 157.736 205.6 160.269Z"
+                    fill="black"
+                  />
+                  <path
+                    class="group-hover:animate-pulse"
+                    d="M188.266 164.269C188.533 165.869 189.733 167.469 191.066 167.736C192.933 168.136 193.466 167.603 193.066 165.069C192.8 163.469 191.6 161.869 190.266 161.603C188.4 161.203 187.866 161.736 188.266 164.269Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M200 168.667C200 170.533 200.667 172 201.333 172C202.133 172 202.667 170.533 202.667 168.667C202.667 166.8 202.133 165.333 201.333 165.333C200.667 165.333 200 166.8 200 168.667Z"
+                    fill="black"
+                  />
+                  <path
+                    class="group-hover:animate-pulse"
+                    d="M204.667 178.533C204.267 179.333 202.667 180 201.2 180C197.067 180 198.4 185.6 202.933 187.2C205.867 188.267 207.2 188 209.333 186C212.8 182.8 212.267 178.133 208.4 177.6C206.933 177.333 205.2 177.867 204.667 178.533Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M50.6666 100.534C50.6666 103.334 59.1999 117.601 62.9332 120.934C65.3332 123.201 70.2666 127.601 73.7332 130.801C85.0666 140.934 87.0666 149.201 79.9999 156.267C76.7999 159.467 75.0666 160.134 72.2666 159.601C59.1999 157.067 59.1999 157.067 55.4666 160.267C52.6666 162.667 50.9332 167.201 46.6666 182.667C40.6666 204.267 40.2666 206.934 43.1999 204.001C45.1999 202.001 53.3332 175.067 53.3332 170.667C53.3332 169.067 54.7999 168.534 60.3999 168.534C69.0666 168.534 76.3999 164.801 83.1999 157.201C87.8666 152.134 88.2666 151.201 87.4666 146.134C86.2666 138.534 81.4666 132.001 71.5999 124.001C66.7999 120.134 61.3332 114.134 58.7999 110.001C54.6666 103.201 50.6666 98.5341 50.6666 100.534Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M80 101.733C80 104.267 83.4667 108.667 84.2667 107.2C85.3333 105.467 83.0667 99.9998 81.3333 99.9998C80.6667 99.9998 80 100.8 80 101.733Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M46.6665 104.268C46.6665 107.868 54.9332 125.868 57.1998 127.201C59.4665 128.668 58.9332 125.734 55.4665 118.934C53.7332 115.468 51.5998 110.401 50.7998 107.734C48.7998 101.734 46.6665 100.001 46.6665 104.268Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M38.9331 106.934C37.9997 107.868 37.3331 109.868 37.3331 111.601C37.3331 113.334 36.6664 114.668 35.9997 114.668C35.1997 114.668 33.9997 116.001 33.1997 117.734C31.3331 121.734 33.4664 129.868 37.9997 136.534L41.3331 141.468L37.1997 147.468C26.9331 162.534 6.93307 211.334 11.4664 210.401C12.7997 210.134 15.5997 204.401 19.1997 194.668C25.5997 177.468 40.1331 146.268 42.5331 144.801C43.3331 144.268 46.2664 145.601 48.9331 147.868C57.5997 154.668 75.9997 160.268 75.9997 156.001C75.9997 155.201 73.9997 154.668 71.7331 154.668C65.5997 154.668 52.3997 148.001 46.1331 142.001C40.5331 136.401 36.1331 128.001 35.9997 122.668C35.9997 120.134 37.0664 121.201 41.0664 127.868C45.7331 135.868 48.5331 138.668 50.2664 136.934C50.6664 136.534 49.7331 134.534 48.2664 132.401C44.3997 126.801 41.3331 118.934 41.3331 114.134C41.4664 110.401 41.7331 110.668 45.1997 118.001C49.5997 127.201 52.7997 131.734 53.9997 130.401C54.5331 130.001 53.7331 127.868 52.3997 125.868C51.0664 123.868 48.5331 118.534 46.6664 114.134C43.1997 105.734 41.5997 104.268 38.9331 106.934Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M85.9998 116.134C85.4664 116.934 83.5998 117.201 81.8664 116.801C77.7331 115.734 77.4664 119.467 81.4664 120.667C84.6664 121.734 90.6664 117.067 88.2664 115.467C87.4664 115.067 86.3998 115.334 85.9998 116.134Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M90.2662 148.933C88.6662 150.4 89.1996 152 91.3329 152C92.3996 152 93.3329 151.067 93.3329 150C93.3329 147.867 91.7329 147.333 90.2662 148.933Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M251.2 173.867C248.667 176.4 246.667 179.6 246.667 181.2C246.667 184.667 248.933 184.934 250 181.467C250.4 180 252.8 177.334 255.467 175.334C258 173.467 259.733 171.2 259.333 170.534C257.867 168.4 255.867 169.2 251.2 173.867Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M139.466 186.4C139.066 189.2 137.466 192.667 136 194C133.2 196.533 132.4 200 134.666 200C138.533 200 145.466 186.133 143.333 182.667C141.733 180 140.266 181.467 139.466 186.4Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M278 188.001C277.6 188.668 277.333 189.335 277.6 189.468C277.867 189.468 279.6 189.735 281.467 190.001C283.467 190.268 286.933 191.468 289.067 192.535C296.8 196.535 299.067 193.735 291.733 189.335C287.067 186.535 279.333 185.735 278 188.001Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M160 195.868C155.067 198.535 149.333 204.001 151.6 204.001C152.4 204.001 154.4 202.935 156.133 201.601C170 191.201 186 195.868 199.067 213.868C202.4 218.668 200.533 217.601 190.267 209.068C183.733 203.735 178.667 201.068 178.667 203.201C178.667 203.468 181.067 206.268 183.867 209.335C186.8 212.535 190.133 217.468 191.467 220.268C193.867 225.468 196 226.935 196 223.201C196 222.135 195.333 219.868 194.533 218.401C193.067 215.735 193.2 215.735 197.2 218.535C201.2 221.335 205.333 221.601 205.333 218.935C205.333 218.268 203.467 214.935 201.2 211.601C196.933 205.068 190.267 199.201 183.067 195.468C177.333 192.535 165.867 192.801 160 195.868Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M226.933 197.468C218.8 201.468 206.667 213.068 206.667 216.801C206.667 220.135 210.4 220.401 215.333 217.468C221.467 213.868 221.867 214.001 219.2 218.001C218.133 219.735 217.333 222.268 217.6 223.601C217.867 225.468 218.667 224.935 221.067 221.068C222.8 218.401 227.333 213.201 231.333 209.468C235.333 205.868 238.667 202.535 238.667 202.135C238.667 200.001 234 202.001 223.467 208.801C217.067 212.935 211.467 216.001 211.067 215.468C209.467 213.868 220.533 203.868 228 200.268C233.733 197.468 237.2 196.668 244 196.668C256.4 196.801 259.333 198.668 274 215.335L277.467 219.335L276.667 215.201C275.867 211.201 276.133 210.935 280.533 210.135C288 208.668 286.533 206.135 278.8 207.068C272.8 207.735 272 207.468 270.133 204.668C268.933 202.801 264.8 199.601 260.933 197.335C255.067 194.001 252.533 193.335 244.533 193.335C236.667 193.335 233.733 194.001 226.933 197.468Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M312.8 204.668C309.333 207.868 308.266 210.668 310.533 210.668C312.4 210.668 322.666 203.735 322.666 202.401C322.666 200.135 316.266 201.468 312.8 204.668Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M113.333 203.335C113.333 205.202 120.933 210.535 123.333 210.535C125.6 210.535 125.333 210.002 121.6 206.668C117.733 203.068 113.333 201.335 113.333 203.335Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M230.533 214.935C225.333 220.269 221.733 224.802 222.533 225.069C223.466 225.335 228 221.602 232.8 216.802C237.6 212.002 242 208.002 242.8 208.002C243.466 208.002 244 207.335 244 206.669C244 203.202 239.066 206.269 230.533 214.935Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M177.733 212.001C180.4 214.801 184.266 219.734 186.266 222.801C188.933 226.801 190.133 227.868 190.4 226.268C191.2 222.401 178.8 206.668 174.933 206.668C173.733 206.668 174.933 208.668 177.733 212.001Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M247.333 209.068C242.4 212.134 228 225.201 228 226.668C228 227.334 229.733 228.134 231.867 228.668C234.8 229.334 237.733 228.401 244.267 224.801C251.2 220.934 254.267 220.001 260.4 220.001C269.733 220.001 271.333 218.001 262.933 216.801C255.6 215.868 250.267 217.334 240.933 223.068C237.467 225.201 234.267 226.668 233.867 226.268C233.067 225.468 242 216.934 248.133 212.668C250.267 211.201 252 209.201 252 208.268C252 206.268 252.133 206.268 247.333 209.068Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M174.8 217.599C182 226.399 184 227.999 184 225.199C184 222.799 172 209.333 169.866 209.333C168.666 209.333 170.666 212.666 174.8 217.599Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M164 215.735C164 217.335 174.667 226.668 176.4 226.668C178.4 226.668 168.533 215.335 166.133 214.935C164.933 214.668 164 215.068 164 215.735Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <a
+                class="inline-flex items-center gap-x-1 font-medium group justify-center text-lg text-[#703bf7]"
+                href="#"
+              >
+                Contact sales to learn more
+                <svg
+                  class="flex-shrink-0 size-4 mt-0.5 transition ease-in-out group-hover:translate-x-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- End Col -->
+
+          <div class="space-y-6 lg:space-y-10">
+            <!-- Icon Block -->
+            <div class="flex">
+              <!-- Icon -->
+              <span
+                class="flex-shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white ttext-[#4D4D4D] shadow-sm mx-auto"
+              >
+                <svg
+                  class="flex-shrink-0 size-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </span>
+              <div class="ms-5 sm:ms-8">
+                <h3 class="text-base sm:text-lg font-semibold text-[#1A1A1A]">
+                  Asset Management Approach Drives Growth
+                </h3>
+                <p class="mt-1 text-[#4D4D4D]">
+                  This involves a range of actions such as optimizing lease
+                  terms, expanding available space, enhancing operating income
+                  through improved efficiency, or utilizing our planning and
+                  development expertise to alter property usage or embark on
+                  redevelopment projects
+                </p>
+              </div>
+            </div>
+            <!-- End Icon Block -->
+
+            <!-- Icon Block -->
+            <div class="flex">
+              <!-- Icon -->
+              <span
+                class="flex-shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-[#1A1A1A] shadow-sm mx-auto"
+              >
+                <svg
+                  class="flex-shrink-0 size-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"
+                  />
+                  <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+                </svg>
+              </span>
+              <div class="ms-5 sm:ms-8">
+                <h3 class="text-base sm:text-lg font-semibold text-[#1A1A1A]">
+                  Identifying Opportunities for Exceptional Expansion
+                </h3>
+                <p class="mt-1 text-[#4D4D4D]">
+                  we specialize in recognizing and capitalizing on opportunities
+                  with exceptional growth prospects in the property market.
+                  Whether it's understanding evolving supply-demand dynamics,
+                  leveraging investments in local infrastructure.
+                </p>
+              </div>
+            </div>
+            <!-- End Icon Block -->
+
+            <!-- Icon Block -->
+            <div class="flex">
+              <!-- Icon -->
+              <span
+                class="flex-shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-[#1A1A1A] shadow-sm mx-auto"
+              >
+                <svg
+                  class="flex-shrink-0 size-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 10v12" />
+                  <path
+                    d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z"
+                  />
+                </svg>
+              </span>
+              <div class="ms-5 sm:ms-8">
+                <h3 class="text-base sm:text-lg font-semibold text-[#1A1A1A]">
+                  Innovative, Simple, & Affordable Commitment"
+                </h3>
+                <p class="mt-1 text-[#4D4D4D]">
+                  we are driven by a passion for creating visionary spaces that
+                  inspire and elevate communities. With a focus on innovation
+                  and forward-thinking design, we strive to redefine the
+                  standards of property development.
+                </p>
+              </div>
+            </div>
+            <!-- End Icon Block -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+      </div>
+    </section>
+    <!-- ===== END ABOUT SECTION ===== -->
+
+    <!-- ===== START NVIGATE EXPERIENCE ===== -->
+    <section class="py-20">
+      <div
+        class="max-w-[85rem] mx-auto px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col items-start gap-10 xl:gap-14"
+      >
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <h1 class="text-white font-semibold text-4xl">
+            Navigating the Experience
+          </h1>
+          <p class="text-white">
+            At CDC Property Development, we've designed a straightforward
+            process to help you find and purchase your dream property with ease.
+            Here's a step-by-step guide to how it all works.
+          </p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <!-- First Card -->
+          <div
+            class="p-5 sm:p-6 lg:p-5 rounded-3xl relative overflow-hidden group z-10 md:p-6 h-full flex flex-col"
+          >
+            <div
+              class="text-white p-2 border-[#cbfb45] text-[18px] w-max border-l-2 relative"
+            >
+              Step 01
+            </div>
+            <div class="flex w-full flex-row">
+              <div
+                class="inline-block rounded-b-md rounded-r-md bg-white bg-gradient-to-r from-[#cbfb45] from-10% via-gray-400 via-30% to-gray-400 to-90% p-0.5"
+              >
+                <div
+                  class="space-y-4 block rounded-b-md rounded-r-md bg-[#703bf7] p-5 relative"
+                >
+                  <h2 class="text-lg md:text-xl font-semibold text-[#FCFCFD]">
+                    Discover a World of Possibilities
+                  </h2>
+                  <p class="text-[#F7F7F8]">
+                    Your journey begins with exploring our carefully curated
+                    property listings. Use our intuitive search tools to filter
+                    properties based on your preferences, including location,
+                    type, size, and budget.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div
+            class="p-5 sm:p-6 lg:p-5 rounded-3xl relative overflow-hidden group z-10 md:p-6 h-full flex flex-col"
+          >
+            <div
+              class="text-white p-2 border-[#cbfb45] text-[18px] w-max border-l-2 relative"
+            >
+              Step 02
+            </div>
+            <div class="flex w-full flex-row">
+              <div
+                class="inline-block rounded-b-md rounded-r-md bg-white bg-gradient-to-r from-[#cbfb45] from-10% via-gray-400 via-30% to-gray-400 to-90% p-0.5"
+              >
+                <div
+                  class="space-y-4 block rounded-b-md rounded-r-md bg-[#703bf7] p-5 relative"
+                >
+                  <h2 class="text-lg md:text-xl font-semibold text-[#FCFCFD]">
+                    Narrowing Down Your Choices
+                  </h2>
+                  <p class="text-[#F7F7F8]">
+                    Once you've found properties that catch your eye, save them
+                    to your account or make a shortlist. This allows you to
+                    compare and revisit your favorites as you make your
+                    decision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div
+            class="p-5 sm:p-6 lg:p-5 rounded-3xl relative overflow-hidden group z-10 md:p-6 h-full flex flex-col"
+          >
+            <div
+              class="text-white p-2 border-[#cbfb45] text-[18px] w-max border-l-2 relative"
+            >
+              Step 03
+            </div>
+            <div class="flex w-full flex-row">
+              <div
+                class="inline-block rounded-b-md rounded-r-md bg-white bg-gradient-to-r from-[#cbfb45] from-10% via-gray-400 via-30% to-gray-400 to-90% p-0.5"
+              >
+                <div
+                  class="space-y-4 block rounded-b-md rounded-r-md bg-[#703bf7] p-5 relative"
+                >
+                  <h2 class="text-lg md:text-xl font-semibold text-[#FCFCFD]">
+                    Personalized Guidance
+                  </h2>
+                  <p class="text-[#F7F7F8]">
+                    Have questions about a property or need more information?
+                    Our dedicated team of real estate experts is just a call or
+                    message away . They’ll guide you through the process from
+                    start to finish.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth Card -->
+          <div
+            class="p-5 sm:p-6 lg:p-5 rounded-3xl relative overflow-hidden group z-10 md:p-6 h-full flex flex-col"
+          >
+            <div
+              class="text-white p-2 border-[#cbfb45] text-[18px] w-max border-l-2 relative"
+            >
+              Step 04
+            </div>
+            <div class="flex w-full flex-row">
+              <div
+                class="inline-block rounded-b-md rounded-r-md bg-white bg-gradient-to-r from-[#cbfb45] from-10% via-gray-400 via-30% to-gray-400 to-90% p-0.5"
+              >
+                <div
+                  class="space-y-4 block rounded-b-md rounded-r-md bg-[#703bf7] p-5 relative"
+                >
+                  <h2 class="text-lg md:text-xl font-semibold text-[#FCFCFD]">
+                    See It for Yourself
+                  </h2>
+                  <p class="text-[#F7F7F8]">
+                    Arrange viewings of the properties you're interested in.
+                    We'll coordinate with the property owners and accompany you
+                    to ensure you get a firsthand look at your potential new
+                    home.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fifth Card -->
+          <div
+            class="p-5 sm:p-6 lg:p-5 rounded-3xl relative overflow-hidden group z-10 md:p-6 h-full flex flex-col"
+          >
+            <div
+              class="text-white p-2 border-[#cbfb45] text-[18px] w-max border-l-2 relative"
+            >
+              Step 05
+            </div>
+            <div class="flex w-full flex-row">
+              <div
+                class="inline-block rounded-b-md rounded-r-md bg-white bg-gradient-to-r from-[#cbfb45] from-10% via-gray-400 via-30% to-gray-400 to-90% p-0.5"
+              >
+                <div
+                  class="space-y-4 block rounded-b-md rounded-r-md bg-[#703bf7] p-5 relative"
+                >
+                  <h2 class="text-lg md:text-xl font-semibold text-[#FCFCFD]">
+                    Making Informed Decisions
+                  </h2>
+                  <p class="text-[#F7F7F8]">
+                    Before making an offer, our team will assist you with due
+                    diligence, including property inspections, legal checks, and
+                    market analysis. We want you to be fully informed and
+                    confident in your choice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sixth Card -->
+          <div
+            class="p-5 sm:p-6 lg:p-5 rounded-3xl relative overflow-hidden group z-10 md:p-6 h-full flex flex-col"
+          >
+            <div
+              class="text-white p-2 border-[#cbfb45] text-[18px] w-max border-l-2 relative"
+            >
+              Step 06
+            </div>
+            <div class="flex w-full flex-row">
+              <div
+                class="inline-block rounded-b-md rounded-r-md bg-white bg-gradient-to-r from-[#cbfb45] from-10% via-gray-400 via-30% to-gray-400 to-90% p-0.5"
+              >
+                <div
+                  class="space-y-4 block rounded-b-md rounded-r-md bg-[#703bf7] p-5 relative"
+                >
+                  <h2 class="text-lg md:text-xl font-semibold text-[#FCFCFD]">
+                    Getting the Best Deal
+                  </h2>
+                  <p class="text-[#F7F7F8]">
+                    Once we have all the information, we’ll negotiate a fair and
+                    competitive price for property. Our goal is to find the best
+                    deal possible while still ensuring that it remains within
+                    your budget.
+                    <!-- We'll help you negotiate the best terms and prepare your
+                    offer. Our goal is to secure the property at the right price
+                    and on favorable terms for both buyer and seller.  -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== END NVIGATE EXPERIENCE ===== -->
+
+    <!-- ===== START CTA ===== -->
+
+    <section class="relative isolate overflow-hidden bg-white py-24 sm:py-32">
+      <div
+        class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-tr from-[#703bf7] to-[#703bf7] opacity-20"
+          style="
+            clip-path: polygon(
+              73.6% 51.7%,
+              91.7% 11.8%,
+              100% 46.4%,
+              97.4% 82.2%,
+              92.5% 84.9%,
+              75.7% 64%,
+              55.3% 47.5%,
+              46.5% 49.4%,
+              45% 62.9%,
+              50.3% 87.2%,
+              21.3% 64.1%,
+              0.1% 100%,
+              5.4% 51.1%,
+              21.4% 63.9%,
+              58.9% 0.2%,
+              73.6% 51.7%
+            );
+          "
+        ></div>
+      </div>
+      <div class="mx-auto xl:flex block max-w-7xl px-6 lg:px-8">
+        <div>
+          <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2
+              class="text-4xl font-bold tracking-tight text-[#1A1A1A] sm:text-6xl"
+            >
+              Work with us
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-[#262626]">
+              CDC Property Developments Ltd strives to ensure its dedication to
+              quality, professionalism, and timely completion is evident in the
+              organisation it collaborates with.
+            </p>
+          </div>
+          <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+            <div
+              class="grid grid-cols-2 gap-x-8 gap-y-6 text-base font-semibold leading-7 hover text-[#703bf7] sm:grid-cols-2 md:flex lg:gap-x-10"
+            >
+              <a class="hover:text-[#1A1A1A]" href="contact.html"
+                >Contact US <span aria-hidden="true">&rarr;</span></a
+              >
+              <a class="hover:text-[#141414]" href="work.html"
+                >Our Projects <span aria-hidden="true">&rarr;</span></a
+              >
+              <a class="hover:text-[#1A1A1A]" href="withus.html"
+                >Our values <span aria-hidden="true">&rarr;</span></a
+              >
+              <a class="hover:text-[#1A1A1A]" href="team.html"
+                >Meet our leadership <span aria-hidden="true">&rarr;</span></a
+              >
+            </div>
+            <p class="mt-6 text-lg max-w-2xl leading-8 text-[#262626]">
+              We firmly believe that partnerships play a crucial role in
+              achieving success in all aspects of development and investment
+              activities. The objective is to establish partnerships with
+              financiers, architects, builders, and real estate agents who align
+              with our aspirations and dedication to constructing outstanding,
+              environmentally friendly structures.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            class="object-cover sm:max-w-xl aspect-auto -scale-x-[1]"
+            src="/images/about/cta.svg"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ===== END CTA ===== -->
+
+    <!-- ===== Footer Start ===== -->
+    <footer id="foot" class="text-white">
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 py-20 flex flex-col lg:flex-row gap-14"
+      >
+        <div class="space-y-6 lg:w-96">
+          <a href="/">
+            <img src="/images/DevelopmentLogo.svg" alt="" class="h-20" />
+            <!-- <span
+          class="text-transparent bg-clip-text bg-gradient-to-tr from-blue-800 to-indigo-400 font-bold text-2xl"
+          >U</span
+        > -->
+            Property Development
+          </a>
+          <p class="max-w-lg text-[#F7F7F8]">
+            Transforming Spaces, Inspiring Lives
+          </p>
+          <div class="flex w-full gap-5">
+            <a href="#" aria-label="social link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="w-5 h-5"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="social link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="w-5 h-5"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="social link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="w-5 h-5"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="social link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="w-5 h-5"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="lg:flex-1 grid grid-cols-2 md:grid-cols-4 gap-10">
+          <div class="space-y-6">
+            <h1 class="text-lg font-semibold text-white">Services</h1>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Financing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Structuring</a
+                >
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Planning</a
+                >
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">Design</a>
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Construction</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6">
+            <h1 class="text-lg font-semibold text-white">Company</h1>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">About</a>
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Our Work</a
+                >
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">Carrer</a>
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6">
+            <h1 class="text-lg font-semibold text-white">Social</h1>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6">
+            <h1 class="text-lg font-semibold text-white">Ressources</h1>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">Privacy</a>
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">Terms</a>
+              </li>
+              <li>
+                <a href="#" class="duration-200 hover:text-white/90">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 space-y-5">
+        <div
+          class="px-5 sm:px-10 md:px-12 lg:px-5 flex justify-center text-center py-3 rounded-md"
+        >
+          <p class="text-[#FCFCFD]">
+            &copy; 2024 CDC Property Development. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ===== Footer End ===== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="js/lenis.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

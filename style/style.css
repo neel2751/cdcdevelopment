@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap");
+
+:root {
+  --heading_color: #31475e;
+  --text-color: rgb(255, 255, 255, 255);
+  --paragraph-color: #141414;
+  --h2-color: rgb(20, 20, 20, 100);
+  --swiper-theme-color: white;
+  --bg-color: #703bf7;
+  /* --bg-color: #8254f8; */
+  --hightlight-color: #cbfb45;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #703bf7;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 900;
+}
+h2 {
+  color: var(--h2-color);
+}
+p {
+  color: var(--paragraph-color);
+  font-family: "Manjari", sans-serif;
+}
+.title {
+  line-height: "3.75rem";
+}
+
+.cta {
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cta_star {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes loop {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #d1d5db;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.set {
+  height: 100vh;
+  padding: 0 clamp(4rem, 12vw, 20rem);
+  display: grid;
+  place-content: center;
+}
+
+button[data-toggle-navbar][data-is-open="true"] #line-1 {
+  transform: rotate(45deg) translateY(0.324rem);
+}
+
+button[data-toggle-navbar][data-is-open="true"] #line-2 {
+  transform: rotate(-45deg) translateY(-0.324rem);
+}
+
+.close {
+  display: hidden;
+}
+
+.mobile_menu_close {
+  display: hidden !important;
+}
+.mobile_menu_open {
+  display: flex;
+}
+
+.animate-spin-slow {
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.animate-spin-reverse-slower {
+  animation: spin-reverse 6s linear infinite;
+}
+@keyframes spin-reverse {
+  100% {
+    transform: rotate(-1turn);
+  }
+}
