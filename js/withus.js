@@ -117,7 +117,7 @@ gsap.to(test, {
     toggleActions: "play none none reverse", // Specifies whether the animation should play forward, pause, or reverse depending on the ScrollTrigger
     scrub: 1, // When set to 1, this means the animation will react instantly when you scroll (optional)
     end: "+=500", // Sets the ending point of the scrollTrigger (optional)
-    markers: true,
+    markers: false,
   },
 });
 
@@ -240,7 +240,7 @@ lenis.scrollTo(`#${baseUrl}`, {
   // callback when the scrolling is finished
   onComplete: () => {
     console.log("Scroll Behaviour finished !");
-    document.querySelector("#build").classList.add("active");
+    // document.querySelector("#build").classList.add("active");
   },
 });
 
