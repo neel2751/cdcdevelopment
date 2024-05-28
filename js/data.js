@@ -390,6 +390,128 @@ export const TEAMDATA = [
   //23 total
 ];
 
+export const TEAMDATAPD = [
+  {
+    id: 1,
+    firstName: "Mohammad",
+    lastName: "Bhuiyan",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image:
+      "https://www.cdc.construction/_next/image?url=%2Fimages%2Fteam%2Fteams%2FMohammadBhuiyan.webp&w=1200&q=75",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+  {
+    id: 2,
+    firstName: "Mohammad",
+    lastName: "Alam",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image:
+      "https://www.cdc.construction/_next/image?url=%2Fimages%2Fteam%2Fteams%2FSadequl.webp&w=1200&q=75",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+  {
+    id: 3,
+    firstName: "T",
+    lastName: "Rahman",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image: "./images/teamLogo.svg",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+  {
+    id: 4,
+    firstName: "Snehal",
+    lastName: "Mhokar",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image: "./images/teamLogo.svg",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+  {
+    id: 5,
+    firstName: "Parvathi",
+    lastName: "Dadireddy",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image: "./images/teamLogo.svg",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+  {
+    id: 6,
+    firstName: "Sayed",
+    lastName: "Ali",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image: "./images/teamLogo.svg",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+  {
+    id: 7,
+    firstName: "Sayed",
+    lastName: "Ali",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image: "./images/teamLogo.svg",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+  {
+    id: 8,
+    firstName: "M",
+    lastName: "Hamid",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image: "./images/teamLogo.svg",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+  {
+    id: 9,
+    firstName: "Masud",
+    lastName: "Karim",
+    description:
+      "Mr. Mohammad Bhuiyan serves as the Chief Executive Officer (CEO) of the Creative Design & Construction Limited (CDC) based in the UK, overseeing the overall strategic direction and management of the organization. In his role, he is responsible for setting goals, formulating policies, and ensuring the efficient operation of the company. Additionally, as the CDM (Construction Design and Management) Coordinator, Mr. Bhuiyan plays a crucial role in ensuring compliance with health and safety regulations throughout the construction projects. He works closely with design and construction teams to integrate safety considerations into the project planning and execution. Overall, Mr Mohammad Bhuiyan's dual role as CEO and CDM Coordinator reflects his commitment to both the business success and the safety of construction projects under his leadership.",
+    image: "./images/teamLogo.svg",
+    company: {
+      department: "CEO",
+      title: "CDM Co-ordinator",
+      teamCategories: "Leadership",
+    },
+  },
+];
+
 export const SERVICES = [
   {
     id: 1,
