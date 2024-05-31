@@ -126,7 +126,6 @@ gsap.from(".image", {
 
 const marque = document.getElementById("marque");
 const marquee = document.getElementById("marquee");
-console.log(marquee);
 
 SERVICES.map((item) => {
   let str = `<div class="text-3xl flex justify-center items-center whitespace-nowrap">

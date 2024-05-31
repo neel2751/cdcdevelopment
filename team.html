@@ -346,13 +346,17 @@
                 class="w-full"
                 src="./images/Asset6.gltf"
                 alt="VR Headset"
-                auto-rotate
                 ar
-                ar-modes
+                ar-scale="fixed"
                 camera-controls
+                touch-action="pan-y"
+                auto-rotate
+                ar-modes
                 autoplay
-                shadow-intensity="1"
-                ios-src="./images/Asset1.gltf"
+                max-camera-orbit="auto 90deg auto"
+                xr-environment
+                shadow-intensity="2"
+                ios-src="./images/Asset6.gltf"
               >
               </model-viewer>
             </div>
@@ -762,5 +766,19 @@
     <script src="./js/lenis.js"></script>
     <script src="./js/navfoot.js"></script>
     <script src="./js/team.js" type="module"></script>
+
+    <script>
+      document
+        .querySelector("#model-viewer")
+        .addEventListener("ar-status", (event) => {
+          if (event.detail.status === "failed") {
+            const error = document.querySelector("#error");
+            error.classList.remove("hide");
+            error.addEventListener("transitionend", (event) => {
+              error.classList.add("hide");
+            });
+          }
+        });
+    </script>
   </body>
 </html>
