@@ -127,31 +127,35 @@ gsap.from(".image", {
 const marque = document.getElementById("marque");
 const marquee = document.getElementById("marquee");
 
-SERVICES.map((item) => {
-  let str = `<div class="text-3xl flex justify-center items-center whitespace-nowrap">
-  <svg
-    viewBox="0 0 4 4"
-    class="flex-none size-1.5 mr-4"
-    aria-hidden="true"
-  >
-    <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-  </svg>
-  ${item.title}
-</div>`;
-  marque.innerHTML += str;
-});
+if (marque && marquee) {
+  document.addEventListener("DOMContentLoaded", function () {
+    SERVICES.map((item) => {
+      let str = `<div class="text-3xl flex justify-center items-center whitespace-nowrap">
+      <svg
+        viewBox="0 0 4 4"
+        class="flex-none size-1.5 mr-4"
+        aria-hidden="true"
+      >
+        <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+      </svg>
+      ${item.title}
+    </div>`;
+      marque.innerHTML += str;
+    });
 
-SERVICES.map((item) => {
-  let str = `<div class="text-3xl flex justify-center items-center whitespace-nowrap">
-  <svg
-    viewBox="0 0 4 4"
-    class="flex-none size-1.5 mr-4"
-    aria-hidden="true"
-    alt="Circle icon"
-  >
-    <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-  </svg>
-  ${item.title}
-</div>`;
-  marquee.innerHTML += str;
-});
+    SERVICES.map((item) => {
+      let str = `<div class="text-3xl flex justify-center items-center whitespace-nowrap">
+      <svg
+        viewBox="0 0 4 4"
+        class="flex-none size-1.5 mr-4"
+        aria-hidden="true"
+        alt="Circle icon"
+      >
+        <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+      </svg>
+      ${item.title}
+    </div>`;
+      marquee.innerHTML += str;
+    });
+  });
+}
